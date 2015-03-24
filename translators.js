@@ -3,8 +3,9 @@ google.load('visualization', '1', {packages: ['corechart']});
 google.setOnLoadCallback(function(){
 	var metricName = "translators";
 	var options = {
-	    width: 1200,
+	    width: 1000,
 	    height: 563,
+		explorer: {},
 	    hAxis: {
 			title: 'Time'
 			},

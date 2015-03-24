@@ -5,6 +5,7 @@ google.setOnLoadCallback(function() {
 	var options = {
     	width: 1000,
     	height: 563,
+		explorer: {},
     	hAxis: {
   			title: 'Time'
     	},
@@ -18,7 +19,7 @@ google.setOnLoadCallback(function() {
     var data = new google.visualization.DataTable(json);
 	var chart = new google.visualization.LineChart(document.getElementById(metricName));
     chart.draw(data, options);
-    
+
   });
 
 });
